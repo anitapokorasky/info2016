@@ -1,0 +1,162 @@
+ejer 1 
+num1 = int (input ("ingrese un numero: "))
+if (num1 % 2) ==0:
+	print ("el numero es par")
+
+
+
+ejer 2
+
+# -*- coding: utf-8 -*-
+"""Situación C2
+Diseñe un programa capaz de permitir el ingreso de 3 valores, calcular su promedio y que muestre
+aquellos valores mayores o iguales al promedio."""
+num1= input("Ingrese un primer numero entero")
+num2= input("Ingrese un segundo numero entero")
+num3= input("Ingrese un tercer numero entero")
+promedio= (num1 + num2 + num3)/3
+print(promedio)
+if (num1>=promedio):
+	print("El numero %s es >= a %s" %(num1,promedio))
+if (num2>=promedio):
+	print("El numero %s es >= a %s" %(num2,promedio))
+if (num3>=promedio):
+	print("El numero %s es >= a %s" %(num3,promedio))
+
+
+
+ejer 3
+
+
+num1 = int (input ('Ingrese un valor: '))
+num2 = int (input ('Ingrese segundo valor:'))
+num3 = int (input ('Ingrese tercer valor: '))
+if (num1 < num2) & (num1 < num3):
+    if (num2 < num3):
+        print 'Ordenados de menor a mayor: ', num1, ' ', num2, ' ', num3
+    else:
+        print 'El orden ascendente es: ', num1, ' ', num3, ' ', num2
+else:
+    if (num2 < num1)  & (num2 < num3):
+        if (num1 < num3):
+            print 'Ordenados de menor a mayor: ', num2, ' ', num1, ' ', num3
+        else:
+            print 'El orden ascendente es: ', num2, ' ', num3, ' ', num1
+    elif (num3 < num1) & (num3 < num2):
+        if (num1 < num2):
+            print 'El orden ascendente es: ', num3, num1, num2 
+        else:
+            print 'Ordenados de menor a mayor: ', num3, num2, num1
+
+ejer 4 
+
+
+# -*- coding: utf-8 -*- 
+
+
+
+ImporTotal = float (input ("Ingrese el importe total "))
+Impuesto = float (input ("Ingrese el impuesto "))
+ImporNeto = float (ImporTotal - Impuesto)
+if (ImporNeto == 0):
+	print	"Error el importe neto no puede ser igual a cero"
+if Impuesto > ImporTotal:
+ 	print "Erro no se puede calcular, el impuesto supera al importe total"
+if ImporNeto > 0: 
+	if ImporTotal > 5000:
+ 		print "Monto Superado para Consumidor Final"
+print "El importe neto es $", ImporNeto
+
+
+
+
+ejer 5 
+
+
+# -*- coding: utf-8 -*-
+
+print("Para saber si se puede jubilar este año complete:")
+edad= input ("Ingrese su edad")
+ant= input("Ingrese la antigüedad en su empleo ")
+
+if (edad>=60) & (ant<25):
+	print("Usted esta adscripto para la jubilacion por edad")
+
+elif (edad<60) & (ant>=25):
+	print("Usted esta adscripto para la jubilacion por antigüedad joven")
+
+
+elif (edad>=60) & (ant>=25):
+	print("Usted esta adscripto para la jubilacion por antigüedad adulta")
+else:
+	print("No cumple los requisitos para jubilarse este año")
+
+
+ejer 7 
+
+
+anio = int(input("Ingrese el anio que desea consultar: "))
+if (anio % 4 == 0 and anio % 100 != 0 or anio % 400 == 0):  
+ print ("El anio ", anio, " Si es bisiesto ")  
+else:  
+ print "El anio ", anio ," No es bisiesto "  
+
+
+ejer 9
+
+
+print ("Elija una opcion")
+print ("1: Calcular el area de un triangulo")
+print ("2: Calcular el area de un circulo")
+x = int (input (" ")) 
+if (x) == (1):
+	print ("Ingrese primero la base del triangulo y luego la altura")
+	BT= int (input (" "))
+	AT= int (input (" "))
+	Area= BT * AT
+	print "El area del triangulo es: ", Area
+elif (x) == (2):
+	print "Ingrese el radio del circulo"
+	RC= int (input (" "))
+	Area= float(3.14 * (RC ** 2))
+	print "El area del circulo es: ", Area
+else:
+	print "No ingreso una respuesta valida"
+
+
+ejer 11 
+
+
+
+
+var2 = float (input("ingrese el salario del empleado"))
+print ("indique por si o por no si el empleado asistio todo el mes")
+x = str (input(""))
+print ("indique 1, 2 o 3 segun el rango horario que trabajo el empleado")
+print ("1: entre 3 y 5 horas los domingos")
+print ("2: entre 6 y 10 horas los domingos")
+print ("3: entre 3 y 10 horas los domingos")
+y = int (input (""))
+if (x == "si") and (y ==1):
+	var3 = var2 *0.03
+	var2 = var2 + var3
+	print ("el salario del empleado con su correspondiente adicional es de" , var2)
+elif (x== "si") and (y==2):
+	var3 = var2 *0.10
+	var2=var2 + var3
+	print ("el salario del empleado con su correspondiente adicional es de", var2)
+elif (x == "no") and (y==3):
+	var3 =var2 * 0.02
+	var2 = var2 + var3
+	print ( "el salario del empleado con su correspondiente adicional es de", var2)
+else:
+	print ("error los valores ingresados no son validos")
+
+
+
+
+
+
+
+
+
